@@ -1,8 +1,5 @@
-package com.example.demo_database;
+package com.example.demo_database.model;
 
-// public class User {
-    
-// }
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -18,6 +15,14 @@ public class User {
   private String name;
 
   private String email;
+
+  public User() {}
+
+  public User(Integer id, String name, String email) { 
+    this.id = id;
+    this.name = name;
+    this.email = email;
+  }
 
   public Integer getId() {
     return id;
